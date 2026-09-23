@@ -50,7 +50,7 @@ def sync_and_push(season="season_01", commit_msg="feat(assets): sync latest visu
     
     print("[*] Pushing to remote main...")
     subprocess.run(["git", "push", "origin", "main"], check=True)
-    print("[✓] Successfully synced and pushed to GitHub!")
+    print("[SUCCESS] Successfully synced and pushed to GitHub!")
 
 if __name__ == "__main__":
     sync_and_push()
