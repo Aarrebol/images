@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">可靠循环不是无限重试</title>
+  <desc id="desc">Agent 执行工具后，根据结构化观察判断进展；只有可恢复且预算充足时继续，否则完成、受控停止或交给人。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#52708f"/></marker>
+    <marker id="redArrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#d85858"/></marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="5" stdDeviation="8" flood-color="#26384a" flood-opacity="0.10"/></filter>
+  </defs>
+  <rect width="1200" height="800" fill="#f6f8fb"/>
+  <text x="600" y="68" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="40" font-weight="700" fill="#1f3347">可靠循环不是无限重试</text>
+  <text x="600" y="108" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="24" fill="#617386">每一轮都要获得新信息，并有明确出口</text>
+
+  <g filter="url(#shadow)" font-family="Microsoft YaHei, sans-serif">
+    <rect x="70" y="220" width="190" height="112" rx="18" fill="#ffffff" stroke="#9db5cc" stroke-width="2"/>
+    <text x="165" y="265" text-anchor="middle" font-size="28" font-weight="700" fill="#274661">目标与状态</text>
+    <text x="165" y="302" text-anchor="middle" font-size="22" fill="#617386">现在要解决什么</text>
+
+    <rect x="315" y="220" width="170" height="112" rx="18" fill="#eaf3ff" stroke="#75a5d6" stroke-width="2"/>
+    <text x="400" y="265" text-anchor="middle" font-size="28" font-weight="700" fill="#274661">决策</text>
+    <text x="400" y="302" text-anchor="middle" font-size="22" fill="#617386">选择下一步</text>
+
+    <rect x="540" y="220" width="180" height="112" rx="18" fill="#fff5df" stroke="#d5aa50" stroke-width="2"/>
+    <text x="630" y="265" text-anchor="middle" font-size="28" font-weight="700" fill="#684b12">工具动作</text>
+    <text x="630" y="302" text-anchor="middle" font-size="22" fill="#76613a">查询或改变世界</text>
+
+    <rect x="775" y="220" width="190" height="112" rx="18" fill="#ecf8f3" stroke="#67ad8c" stroke-width="2"/>
+    <text x="870" y="263" text-anchor="middle" font-size="27" font-weight="700" fill="#245d49">Observation</text>
+    <text x="870" y="301" text-anchor="middle" font-size="22" fill="#4d7566">状态·原因·建议</text>
+
+    <rect x="775" y="410" width="190" height="112" rx="18" fill="#f1edff" stroke="#8f7ac6" stroke-width="2"/>
+    <text x="870" y="455" text-anchor="middle" font-size="28" font-weight="700" fill="#493878">进展门</text>
+    <text x="870" y="492" text-anchor="middle" font-size="22" fill="#675b87">有新信息？有预算？</text>
+  </g>
+
+  <g stroke="#52708f" stroke-width="4" fill="none" marker-end="url(#arrow)">
+    <path d="M260 276 H305"/>
+    <path d="M485 276 H530"/>
+    <path d="M720 276 H765"/>
+    <path d="M870 332 V400"/>
+    <path d="M775 466 C610 466 540 395 400 342"/>
+  </g>
+  <text x="574" y="440" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#52708f">更新状态后继续</text>
+
+  <g font-family="Microsoft YaHei, sans-serif">
+    <rect x="1015" y="178" width="150" height="76" rx="16" fill="#e8f7ed" stroke="#62a779" stroke-width="2"/>
+    <text x="1090" y="224" text-anchor="middle" font-size="26" font-weight="700" fill="#2e6a43">完成</text>
+    <rect x="1015" y="285" width="150" height="76" rx="16" fill="#fff3e3" stroke="#d79a4d" stroke-width="2"/>
+    <text x="1090" y="331" text-anchor="middle" font-size="26" font-weight="700" fill="#80551f">受控停止</text>
+    <rect x="1015" y="392" width="150" height="76" rx="16" fill="#f3ecff" stroke="#9477c4" stroke-width="2"/>
+    <text x="1090" y="438" text-anchor="middle" font-size="26" font-weight="700" fill="#5a4282">交给人</text>
+    <text x="1090" y="505" text-anchor="middle" font-size="20" fill="#617386">成功 / 无进展 / 风险</text>
+    <text x="1090" y="535" text-anchor="middle" font-size="20" fill="#617386">阻塞 / 预算耗尽</text>
+  </g>
+  <g stroke="#52708f" stroke-width="3" fill="none" marker-end="url(#arrow)">
+    <path d="M965 438 C990 400 985 216 1005 216"/>
+    <path d="M965 454 C990 430 990 323 1005 323"/>
+    <path d="M965 470 C985 470 990 430 1005 430"/>
+  </g>
+
+  <path d="M870 210 C870 145 630 145 630 210" stroke="#d85858" stroke-width="4" stroke-dasharray="10 9" fill="none" marker-end="url(#redArrow)"/>
+  <rect x="650" y="132" width="210" height="54" rx="14" fill="#fff0f0" stroke="#e49494"/>
+  <text x="755" y="167" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#b33d3d">同状态 + 同动作</text>
+
+  <rect x="70" y="620" width="1095" height="110" rx="22" fill="#20384e"/>
+  <text x="617" y="666" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="26" fill="#ffffff">可靠循环的最小控制面</text>
+  <text x="617" y="706" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="27" font-weight="700" fill="#aee0ca">高信号反馈　＋　错误分类　＋　重试预算　＋　停止 / 求助出口</text>
+</svg>

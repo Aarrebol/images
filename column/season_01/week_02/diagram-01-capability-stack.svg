@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#F7F9FC"/>
+  <text x="600" y="58" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="34" font-weight="700" fill="#17233C">Tool、API、MCP 与 Skill 各自解决什么问题？</text>
+  <text x="600" y="96" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="21" fill="#58657A">四者解决不同维度的问题：Skill 组织流程，MCP 标准接入，Tool 规范动作，API 提供底座</text>
+
+  <rect x="65" y="180" width="220" height="470" rx="26" fill="#FFFFFF" stroke="#7D8CA5" stroke-width="3"/>
+  <text x="175" y="230" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="28" font-weight="700" fill="#24324A">用户目标</text>
+  <text x="175" y="275" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="22" fill="#58657A">“安排一次</text>
+  <text x="175" y="307" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="22" fill="#58657A">合规出差”</text>
+  <path d="M175 355 L175 575" stroke="#A7B0C0" stroke-width="3" stroke-dasharray="9 8"/>
+  <text x="175" y="405" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="19" fill="#6B778C">理解目标</text>
+  <text x="175" y="455" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="19" fill="#6B778C">选择动作</text>
+  <text x="175" y="505" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="19" fill="#6B778C">接收结果</text>
+  <text x="175" y="555" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="19" fill="#6B778C">继续或确认</text>
+
+  <rect x="345" y="145" width="780" height="125" rx="24" fill="#F3EDFF" stroke="#7A4CE0" stroke-width="4"/>
+  <text x="420" y="195" font-family="Microsoft YaHei, Arial" font-size="30" font-weight="700" fill="#5C35B5">Skill</text>
+  <text x="420" y="235" font-family="Microsoft YaHei, Arial" font-size="22" fill="#684F91">任务做法：流程、规范、模板、异常处理</text>
+  <text x="1010" y="215" text-anchor="end" font-family="Microsoft YaHei, Arial" font-size="22" font-weight="700" fill="#5C35B5">“应该怎样做？”</text>
+
+  <rect x="345" y="305" width="780" height="125" rx="24" fill="#EAF2FF" stroke="#2F6FEB" stroke-width="4"/>
+  <text x="420" y="355" font-family="Microsoft YaHei, Arial" font-size="30" font-weight="700" fill="#174EA6">MCP（可选连接协议）</text>
+  <text x="420" y="395" font-family="Microsoft YaHei, Arial" font-size="21" fill="#3D5E91">标准协议：外部能力统一发现与调用（本地能力无需 MCP）</text>
+  <text x="1010" y="375" text-anchor="end" font-family="Microsoft YaHei, Arial" font-size="22" font-weight="700" fill="#174EA6">“外部能力如何接入？”</text>
+
+  <rect x="345" y="465" width="780" height="125" rx="24" fill="#E9F8EF" stroke="#2A9D5B" stroke-width="4"/>
+  <text x="420" y="515" font-family="Microsoft YaHei, Arial" font-size="30" font-weight="700" fill="#197A43">Tool</text>
+  <text x="420" y="555" font-family="Microsoft YaHei, Arial" font-size="22" fill="#3D6F53">模型动作：清晰名称、参数、高信号结果与错误</text>
+  <text x="1010" y="535" text-anchor="end" font-family="Microsoft YaHei, Arial" font-size="22" font-weight="700" fill="#197A43">“模型能做什么？”</text>
+
+  <rect x="345" y="625" width="780" height="125" rx="24" fill="#FFF2E7" stroke="#E27A24" stroke-width="4"/>
+  <text x="420" y="675" font-family="Microsoft YaHei, Arial" font-size="30" font-weight="700" fill="#B85B10">API / 本地程序 / 数据源</text>
+  <text x="420" y="715" font-family="Microsoft YaHei, Arial" font-size="22" fill="#87552E">底层能力：查询数据、执行计算、改变业务状态</text>
+  <text x="1010" y="695" text-anchor="end" font-family="Microsoft YaHei, Arial" font-size="22" font-weight="700" fill="#B85B10">“系统如何访问？”</text>
+
+  <defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#64748B"/></marker></defs>
+  <path d="M285 410 L335 410" stroke="#64748B" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M735 270 L735 300" stroke="#64748B" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M735 430 L735 460" stroke="#64748B" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M735 590 L735 620" stroke="#64748B" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="310" y="372" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="15" fill="#64748B">驱动执行</text>
+  <text x="600" y="776" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="17" fill="#7D8CA5">注：四者解决不同维度的问题，可按需组合；本地工具无需走 MCP，Skill 负责规程而非权限</text>
+</svg>
+

@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#F8FAFC"/>
+  
+  <!-- Header -->
+  <text x="600" y="52" text-anchor="middle" font-family="Microsoft YaHei, -apple-system, sans-serif" font-size="32" font-weight="700" fill="#0F172A">Spec Kit 规格驱动开发：Coding Agent 的代码级 Harness</text>
+  <text x="600" y="88" text-anchor="middle" font-family="Microsoft YaHei, -apple-system, sans-serif" font-size="19" fill="#475569">在动第一行生产代码前完成图纸自审，在交付代码后完成自动化实物对账</text>
+
+  <!-- Defs: Markers and Gradients -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,2 L8,5 L0,8 z" fill="#64748B"/>
+    </marker>
+    <marker id="blueArrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,2 L8,5 L0,8 z" fill="#2563EB"/>
+    </marker>
+    <marker id="orangeArrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,2 L8,5 L0,8 z" fill="#D97706"/>
+    </marker>
+  </defs>
+
+  <!-- ================= TOP SECTION: 规格与设计阶段 (Row 1) ================= -->
+  <!-- Zone Header -->
+  <rect x="50" y="120" width="1100" height="250" rx="20" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="2"/>
+  <text x="80" y="152" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="700" fill="#334155">第一阶段：前置约束与图纸设计（只产生 Markdown 契约，不写生产代码）</text>
+
+  <!-- Card 1: Constitution -->
+  <rect x="75" y="175" width="230" height="170" rx="14" fill="#FFFFFF" stroke="#3B82F6" stroke-width="2.5"/>
+  <rect x="75" y="175" width="230" height="38" rx="14" fill="#EFF6FF"/>
+  <text x="190" y="201" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="700" fill="#1E40AF">1. Constitution 项目宪法</text>
+  <text x="95" y="235" font-family="Microsoft YaHei, sans-serif" font-size="14" fill="#475569">• 跨功能的全局长效铁律</text>
+  <text x="95" y="260" font-family="Microsoft YaHei, sans-serif" font-size="14" fill="#475569">• 明确分层边界与进程所有权</text>
+  <text x="95" y="285" font-family="Microsoft YaHei, sans-serif" font-size="14" fill="#475569">• 铁律：证据先行、契约优先</text>
+  <text x="95" y="315" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="700" fill="#2563EB">产物：.specify/memory/</text>
+
+  <!-- Arrow 1 -> 2 -->
+  <path d="M305 260 L345 260" stroke="#64748B" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Card 2: Specify -->
+  <rect x="350" y="175" width="230" height="170" rx="14" fill="#FFFFFF" stroke="#3B82F6" stroke-width="2.5"/>
+  <rect x="350" y="175" width="230" height="38" rx="14" fill="#EFF6FF"/>
+  <text x="465" y="201" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="700" fill="#1E40AF">2. Specify 功能规格</text>
+  <text x="370" y="235" font-family="Microsoft YaHei, sans-serif" font-size="14" fill="#475569">• 聚焦用户价值与业务边界</text>
+  <text x="370" y="260" font-family="Microsoft YaHei, sans-serif" font-size="14" fill="#475569">• 严禁提前写 API 或表结构</text>
+  <text x="370" y="285" font-family="Microsoft YaHei, sans-serif" font-size="14" fill="#475569">• 定义 12 条关键验收标准(AC)</text>
+  <text x="370" y="315" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="700" fill="#2563EB">产物：spec.md</text>
+
+  <!-- Arrow 2 -> 3 -->
+  <path d="M580 260 L620 260" stroke="#64748B" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Card 3: Clarify -->
+  <rect x="625" y="175" width="230" height="170" rx="14" fill="#FFFFFF" stroke="#3B82F6" stroke-width="2.5"/>
+  <rect x="625" y="175" width="230" height="38" rx="14" fill="#EFF6FF"/>
+  <text x="740" y="201" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="700" fill="#1E40AF">3. Clarify 歧义澄清</text>
+  <text x="645" y="235" font-family="Microsoft YaHei, sans-serif" font-size="14" fill="#475569">• 逼问会改变架构的关键边界</text>
+  <text x="645" y="260" font-family="Microsoft YaHei, sans-serif" font-size="14" fill="#475569">• 区分受理状态 vs 物理完成</text>
+  <text x="645" y="285" font-family="Microsoft YaHei, sans-serif" font-size="14" fill="#475569">• 明确页面刷新与断线自愈</text>
+  <text x="645" y="315" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="700" fill="#2563EB">产物：回写至 spec.md</text>
+
+  <!-- Arrow 3 -> 4 -->
+  <path d="M855 260 L895 260" stroke="#64748B" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Card 4: Plan -->
+  <rect x="900" y="175" width="230" height="170" rx="14" fill="#FFFFFF" stroke="#3B82F6" stroke-width="2.5"/>
+  <rect x="900" y="175" width="230" height="38" rx="14" fill="#EFF6FF"/>
+  <text x="1015" y="201" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="700" fill="#1E40AF">4. Plan 技术方案</text>
+  <text x="920" y="235" font-family="Microsoft YaHei, sans-serif" font-size="14" fill="#475569">• 将规格翻译为技术架构</text>
+  <text x="920" y="260" font-family="Microsoft YaHei, sans-serif" font-size="14" fill="#475569">• 业务库与测量库数据解耦</text>
+  <text x="920" y="285" font-family="Microsoft YaHei, sans-serif" font-size="14" fill="#475569">• 定义 REST/SSE 接口契约</text>
+  <text x="920" y="315" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="700" fill="#2563EB">产物：plan.md / contracts/</text>
+
+  <!-- Vertical Connector: Plan (Top-Right) down to Tasks/Analyze (Bottom-Right) -->
+  <path d="M1015 345 L1015 410" stroke="#2563EB" stroke-width="3" marker-end="url(#blueArrow)"/>
+
+  <!-- ================= BOTTOM SECTION: 门禁与实施阶段 (Row 2) ================= -->
+  <!-- Zone Header -->
+  <rect x="50" y="420" width="1100" height="340" rx="20" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="2"/>
+  <text x="80" y="452" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="700" fill="#334155">第二阶段：质量门禁与实施对账（严格按任务编码，对账驱动补齐）</text>
+
+  <!-- Card 5: Tasks (Right side of bottom) -->
+  <rect x="900" y="475" width="230" height="170" rx="14" fill="#FFFFFF" stroke="#6366F1" stroke-width="2.5"/>
+  <rect x="900" y="475" width="230" height="38" rx="14" fill="#EEF2FF"/>
+  <text x="1015" y="501" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="700" fill="#4338CA">5. Tasks 任务拆解</text>
+  <text x="920" y="535" font-family="Microsoft YaHei, sans-serif" font-size="14" fill="#475569">• 拆解为可排序、可追踪项</text>
+  <text x="920" y="560" font-family="Microsoft YaHei, sans-serif" font-size="14" fill="#475569">• 每项强绑定 AC/FR 编号</text>
+  <text x="920" y="585" font-family="Microsoft YaHei, sans-serif" font-size="14" fill="#475569">• 严格声明依赖关系与影响</text>
+  <text x="920" y="615" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="700" fill="#4F46E5">产物：tasks.md (24 项任务)</text>
+
+  <!-- Arrow 5 -> 6 (Tasks Left to Analyze) -->
+  <path d="M900 560 L860 560" stroke="#64748B" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Card 6: Analyze (Gateway 1 - Amber) -->
+  <rect x="625" y="475" width="230" height="170" rx="14" fill="#FFFBEB" stroke="#D97706" stroke-width="3"/>
+  <rect x="625" y="475" width="230" height="38" rx="14" fill="#FEF3C7"/>
+  <text x="740" y="501" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="700" fill="#B45309">6. Analyze 图纸自审</text>
+  <text x="645" y="535" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="700" fill="#92400E">【质量门禁 1 · 开工前】</text>
+  <text x="645" y="560" font-family="Microsoft YaHei, sans-serif" font-size="14" fill="#78350F">• Spec vs Plan vs Tasks 自洽</text>
+  <text x="645" y="585" font-family="Microsoft YaHei, sans-serif" font-size="14" fill="#78350F">• 查无源任务、查遗漏 AC</text>
+  <text x="645" y="615" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="700" fill="#B45309">原则：只改文档，不动代码</text>
+
+  <!-- Arrow 6 -> 7 (Analyze Left to Implement) -->
+  <path d="M625 560 L585 560" stroke="#64748B" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Card 7: Implement -->
+  <rect x="350" y="475" width="230" height="170" rx="14" fill="#FFFFFF" stroke="#10B981" stroke-width="2.5"/>
+  <rect x="350" y="475" width="230" height="38" rx="14" fill="#ECFDF5"/>
+  <text x="465" y="501" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="700" fill="#047857">7. Implement 分步实施</text>
+  <text x="370" y="535" font-family="Microsoft YaHei, sans-serif" font-size="14" fill="#475569">• AI 严格按依赖顺序实施</text>
+  <text x="370" y="560" font-family="Microsoft YaHei, sans-serif" font-size="14" fill="#475569">• 每步同步产出自动化单测</text>
+  <text x="370" y="585" font-family="Microsoft YaHei, sans-serif" font-size="14" fill="#475569">• 禁止脱离 tasks 自由发挥</text>
+  <text x="370" y="615" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="700" fill="#059669">产物：源码 + 自动化测试集</text>
+
+  <!-- Arrow 7 -> 8 (Implement Left to Converge) -->
+  <path d="M350 560 L310 560" stroke="#64748B" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Card 8: Converge (Gateway 2 - Purple/Violet) -->
+  <rect x="75" y="475" width="230" height="170" rx="14" fill="#F5F3FF" stroke="#7C3AED" stroke-width="3"/>
+  <rect x="75" y="475" width="230" height="38" rx="14" fill="#EDE9FE"/>
+  <text x="190" y="501" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="700" fill="#6D28D9">8. Converge 实物对账</text>
+  <text x="95" y="535" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="700" fill="#5B21B6">【质量门禁 2 · 交工后】</text>
+  <text x="95" y="560" font-family="Microsoft YaHei, sans-serif" font-size="14" fill="#4C1D95">• 拿跑通的代码对照 12 条 AC</text>
+  <text x="95" y="585" font-family="Microsoft YaHei, sans-serif" font-size="14" fill="#4C1D95">• 核验 100 次并发与刷新恢复</text>
+  <text x="95" y="615" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="700" fill="#6D28D9">产物：evidence.md (全绿收敛)</text>
+
+  <!-- Feedback Loop: From Converge back to Tasks/Implement when gaps are found -->
+  <path d="M190 645 C190 715 1015 715 1015 650" fill="none" stroke="#D97706" stroke-width="3.5" stroke-dasharray="6,6" marker-end="url(#orangeArrow)"/>
+  <rect x="480" y="700" width="240" height="30" rx="6" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
+  <text x="600" y="721" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="700" fill="#92400E">若发现缺口：向 tasks 追加任务闭环</text>
+
+</svg>

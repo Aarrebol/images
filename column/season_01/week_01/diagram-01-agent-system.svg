@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <rect width="1200" height="760" fill="#F7F9FC"/>
+  <text x="600" y="58" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="34" font-weight="700" fill="#17233C">一个 Agent 系统由什么共同决定？</text>
+  <text x="600" y="96" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="22" fill="#58657A">模型负责判断，Harness 组织并约束判断进入真实任务</text>
+
+  <rect x="55" y="295" width="180" height="110" rx="20" fill="#FFFFFF" stroke="#7D8CA5" stroke-width="3"/>
+  <text x="145" y="342" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="28" font-weight="700" fill="#24324A">用户目标</text>
+  <text x="145" y="378" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="20" fill="#66758D">“帮我完成任务”</text>
+
+  <rect x="290" y="150" width="590" height="410" rx="30" fill="#EAF2FF" stroke="#2F6FEB" stroke-width="4"/>
+  <text x="585" y="195" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="30" font-weight="700" fill="#174EA6">Agent Harness</text>
+
+  <rect x="335" y="230" width="210" height="100" rx="16" fill="#FFFFFF" stroke="#2F6FEB" stroke-width="2"/>
+  <text x="440" y="270" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="24" font-weight="700" fill="#174EA6">上下文与状态</text>
+  <text x="440" y="302" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="19" fill="#52637B">模型看到什么</text>
+
+  <rect x="625" y="230" width="210" height="100" rx="16" fill="#FFFFFF" stroke="#2F6FEB" stroke-width="2"/>
+  <text x="730" y="270" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="24" font-weight="700" fill="#174EA6">规则与权限</text>
+  <text x="730" y="302" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="19" fill="#52637B">模型能做什么</text>
+
+  <rect x="445" y="365" width="280" height="125" rx="22" fill="#F2ECFF" stroke="#7A4CE0" stroke-width="4"/>
+  <text x="585" y="415" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="30" font-weight="700" fill="#5C35B5">模型 Model</text>
+  <text x="585" y="454" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="20" fill="#684F91">理解目标并选择下一步</text>
+
+  <text x="585" y="530" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="20" fill="#174EA6">循环、反馈、验证、停止与人工交接</text>
+
+  <rect x="945" y="190" width="200" height="125" rx="20" fill="#E9F8EF" stroke="#2A9D5B" stroke-width="3"/>
+  <text x="1045" y="240" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="28" font-weight="700" fill="#197A43">工具 Tools</text>
+  <text x="1045" y="276" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="19" fill="#3D6F53">查询、计算、行动</text>
+
+  <rect x="945" y="430" width="200" height="125" rx="20" fill="#FFF2E7" stroke="#E27A24" stroke-width="3"/>
+  <text x="1045" y="480" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="28" font-weight="700" fill="#B85B10">环境 Environment</text>
+  <text x="1045" y="516" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="19" fill="#87552E">文件、网站、业务系统</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#56657A"/></marker>
+  </defs>
+  <path d="M235 350 L285 350" stroke="#56657A" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M880 275 L938 250" stroke="#56657A" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M945 300 C905 340 905 410 942 455" fill="none" stroke="#56657A" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M945 500 C900 585 790 620 680 560" fill="none" stroke="#E27A24" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="705" y="640" text-anchor="middle" font-family="Microsoft YaHei, Arial" font-size="22" fill="#9A5A22">环境结果返回为反馈，驱动下一次判断</text>
+</svg>
+
